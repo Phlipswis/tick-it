@@ -1,7 +1,9 @@
-# tick.it - Webapp Kanban Board
+# [tick.it](https://phlipswis.github.io/tick-it/) - Webapp Kanban Board
 ![Screenshot](Screenshot.png)
 
 tick.it is a web-based Kanban board application for managing tasks and workflows. The app allows users to create, edit, move, and delete tasks as cards.
+
+## Use it [here](https://phlipswis.github.io/tick-it/) on GitHub Pages!
 
 ### Features:
 
