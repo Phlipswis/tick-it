@@ -1,33 +1,31 @@
 # tick.it - Webapp Kanban Board
 ![Screenshot](Screenshot.png)
 
-tick.it ist eine webbasierte Kanban-Board-Anwendung zur Verwaltung von Aufgaben und Workflows. Die Anwendung ermöglicht es, Aufgaben als Karten zu erstellen, zu bearbeiten, zu verschieben und zu löschen.
+tick.it is a web-based Kanban board application for managing tasks and workflows. The app allows users to create, edit, move, and delete tasks as cards.
 
-### Funktionen:
+### Features:
 
-- Erstellen, Bearbeiten und Löschen von Karten über ein Modal
-- Drag-and-Drop zum Verschieben von Karten zwischen den Spalten
-- Löschen von Karten per Drag-and-Drop 
-- Unterstützung von drei Themes:
+- Create, edit, and delete cards via a modal
+- Drag-and-drop to move cards between columns
+- Delete cards via drag-and-drop
+- Support for three themes:
     - Light
     - Dark
     - High Contrast
-- Fully Responsive-Design 
-    - Mobile (<= 1080px)
-    - Tablet (1081px bis 1919px)
-    - Desktop (>= 1920px)   
-- Reduced Motion Implementierung
+- Fully responsive design:
+    - Mobile (≤ 1080px)
+    - Tablet (1081px to 1919px)
+    - Desktop (≥ 1920px)  
+- Reduced motion implementation
 
+### Technical Overview:
 
-### Technischer Überblick:
+| Component           | Technology                           | Description                       |
+|---------------------|--------------------------------------|-----------------------------------|
+| **Frontend**        | HTML, CSS, TypeScript                | Vanilla JS, no frameworks         |
+| **Data Storage**    | LocalStorage                         | `tickit-items` key in browser     |
+| **State Handling**  | Synchronization between UI & LS      | Local arrays                       |
 
-| Komponente          | Technologie                          | Beschreibung                     |
-|---------------------|--------------------------------------|----------------------------------|
-| **Frontend**        | HTML, CSS, TypeScript                | Vanilla JS, keine Frameworks     |
-| **Datenhaltung**    | LocalStorage                         | tickit-items key in Browser      |
-| **State-Handling**  | Synchronisation zwischen UI & LS     | Lokale Arrays                    |
-
-## Dokumentation von KI-Einsatz
-- Unterstützung in der Codegenerierung mit Claude Sonnet 4.5
-- Fehlersuche mit Claude Sonnet 4.5
-- "Side AI Hustle" Branch Styling und Modal Interface erstellt mit Claude Sonnet 4.5
+## AI Usage Documentation
+- Assisted code generation with Claude Sonnet 4.5
+- Debugging with Claude Sonnet 4.5
