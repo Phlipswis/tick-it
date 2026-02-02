@@ -1,17 +1,16 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-    base: process.env.NODE_ENV === 'production' 
-    ? '/tick-it' 
+export default defineConfig(({ mode }) => ({
+  // Nur für GitHub Pages den base-Pfad setzen
+  base: mode === 'production' && process.env.GITHUB_ACTIONS
+    ? '/tick-it/' 
     : '/',
-
   
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
     
-    // Alle HTML-Dateien als Entry-Points
     rollupOptions: {
       input: {
         main: 'index.html',
@@ -20,6 +19,5 @@ export default defineConfig({
     },
   },
   
-  // Public-Ordner für statische Assets
   publicDir: 'public',
-});
+}));

@@ -5,7 +5,7 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="./images/logo_pointer.svg"
+      href="/images/logo_pointer.svg"
     />
     <script>
       // Apply theme immediately before any rendering
@@ -14,8 +14,8 @@
         document.documentElement.setAttribute('data-theme', theme);
       })();
     </script>
-    <link rel="stylesheet" href="./src/styles/main.css" />
-    <link rel="stylesheet" href="./src/styles/impressum.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/impressum.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tick.it - Impressum</title>
   </head>
@@ -29,9 +29,9 @@
             const theme =
               document.documentElement.getAttribute('data-theme') || 'light';
             const logoMap = {
-              light: './src/images/logo_lightmode.svg',
-              dark: './src/images/logo_darkmode.svg',
-              'high-contrast': './src/images/logo_high_contrast.svg',
+              light: '/images/logo_lightmode.svg',
+              dark: '/images/logo_darkmode.svg',
+              'high-contrast': '/images/logo_high_contrast.svg',
             };
             document.getElementById('theme-logo').src = logoMap[theme];
           })();
@@ -65,9 +65,9 @@
     </div>
 
     <ul class="navigation">
-      <li><a href="./index.html">Back to Board</a></li>
+      <li><a href="/index.html">Back to Board</a></li>
     </ul>
 
-    <script type="module" src="./src/scripts/theme.ts"></script>
+    <script type="module" src="/src/scripts/theme.ts"></script>
   </body>
 </html>
