@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ändere zu 'master' falls dein Hauptbranch 'master' heißt
-  workflow_dispatch:  # Erlaubt manuelles Triggern
+      - main
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
